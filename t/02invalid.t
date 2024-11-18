@@ -3,7 +3,7 @@
 use strict;
 use warnings;
 
-use Test::More tests => 7;
+use Test::More tests => 8;
 use Test::Builder::Tester;
 use Test::utf8;
 use Encode;
@@ -45,7 +45,6 @@ test_test("string with Linear B Syllabary characters");
 
 
 
-
 test_out("ok 1 - valid string test");
 my $empty_string = "";
 Encode::_utf8_on($empty_string);
@@ -74,8 +73,4 @@ test_fail(+2);
 test_diag("malformed byte sequence starting at byte 0");
 is_valid_string($invalid);
 test_test("invalid string test starting with bad char");
-
-
-
-
 
