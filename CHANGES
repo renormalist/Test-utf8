@@ -1,3 +1,11 @@
+1.04   2024-11-18
+     - fix incorrect range for U+10000..U+3FFFF codepoints
+       [GH#8, GH#9, Enrique García Cota]
+     - a new set of isnt_* tests to complement their is_* variants [GH#6, Nick Tonkin]
+       - isnt_within_ascii
+       - isnt_within_latin1
+       - isnt_within_latin_1
+
 1.03   2024-11-14
      - Fix tests to adapt to Perl now removing
        apostrophe as package separator [RT#154915]
